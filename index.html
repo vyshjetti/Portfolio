@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Vyshnavi - Web Developer</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">Vyshnavi</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#">The Whimsy Workshop </a></li>
+ 
+        </ul>
+      </div>
+    </nav>
+    <section class="section">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">HELLO</p>
+          <h1 class="title">
+             I'm <span>Vyshnavi</span>
+          </h1>
+          <p class="description">
+            Your friendly 20-something, learning something new every day!<br> I moved to the U.S. in 2022 for my master’s, and it’s been a wild ride of learning and occasional chaos.</p> <p class="description">I’m passionate about the data field, and my current work involves data analysis. I’m also an enthusiastic learner when it comes to AI.
+
+          </p>
+          <p class="description">
+            One of my recent passions is storytelling in different forms—whether through writing, creativity, or so much more. I like to have a garden filled with homegrown veggies, fruits, and flowers, but for now, I’m just trying to keep my houseplants alive.
+          </p>
+          <div class="action__btns">
+            <button class="hire__me" onclick="openLinks()">Follow Me</button>
+            <button class="portfolio" onclick="window.location.href='mailto:vjetti10@gmail.com'">Contact Me</button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="profile.jpg" alt="profile" />
+        </div>
+      </div>
+    </section>
+    <script>
+      function openLinks() {
+        let linkedin = document.createElement("a");
+        linkedin.href = "https://www.linkedin.com/in/vyshnavijetti/";
+        linkedin.target = "_blank";
+        linkedin.rel = "noopener noreferrer";
+        document.body.appendChild(linkedin);
+        linkedin.click();
+
+        let youtube = document.createElement("a");
+        youtube.href = "https://www.youtube.com/@codecrumbs01";
+        youtube.target = "_blank";
+        youtube.rel = "noopener noreferrer";
+        document.body.appendChild(youtube);
+        youtube.click();
+      }
+    </script>
+  </body>
+</html>
